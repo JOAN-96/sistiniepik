@@ -1,0 +1,35 @@
+:root {
+    --bg-color: #FFFEFE;
+    --bg-dark: #0D0D0D;
+
+    /* Button */
+    --btn-primary-text: #FEF1E9;
+    --btn-primary: #F36F21;
+    --btn-primary-hover: #863D12;
+
+    --btn-secondary: #1E1E1E;
+    --btn-secondary-hover: #686868;
+    --btn-secondary-text: #E9E9E9;
+
+    /* Text */
+    --text-header: #1E1E1E;
+    --text-subheader: #4B4B4B;
+    --text-title: #686868;
+    --text-body: #696866;
+    --text-caption: #B2AFAC;
+
+    /* Others */
+    --grey-300: #FCFAF6;
+    --grey-500: #FAF7F2;
+    --grey-600: #E4E1DC;
+    --grey-900: #696866;
+
+    --accent-50: #FBF8EC;
+    --accent-500: #D5B942;
+    --accent-900: #594E1C;
+
+    --red-500: #E74C3C;
+
+    --primary-900: #662F0E;
+
+}

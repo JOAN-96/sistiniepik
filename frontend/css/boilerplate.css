@@ -1,0 +1,106 @@
+@import url(color.css);
+@import url(fonts.css);
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-primary {
+    width: fit-content;
+    height: 48px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--btn-primary);
+    color: var(--btn-primary-text);
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .btn-primary {
+        height: 56px;
+    }
+}
+
+.btn-secondary {
+    width: fit-content;
+    height: 48px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--btn-secondary);
+    color: var(--btn-secondary-text);
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn-secondary:hover {
+    background-color: var(--btn-secondary-hover);
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .btn-secondary {
+        height: 56px;
+    }
+}
+
+.nav {
+    width: fit-content;
+    height: 48px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--text-caption);
+    font: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.nav:hover {
+    border-bottom: 2px;
+    border-color: var(--btn-primary-hover);
+    color: var(--btn-primary-hover);
+}
+
+.nav:active {
+    border-bottom: 2px;
+    border-color: var(--btn-primary-hover);
+    color: var(--btn-primary-hover);
+    text-decoration: none;
+}
