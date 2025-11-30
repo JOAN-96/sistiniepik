@@ -1,3 +1,150 @@
 @import url(boilerplate.css);
 @import url(fonts.css);
 @import url(color.css);
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+@layer header {
+    header {
+        height: 114px;
+        background-color: var(--grey-500);
+    }
+
+    header nav {
+        height: 100%;
+        background-color: inherit;
+    }
+
+    nav .container-fluid .logo {
+        padding: 8px;
+        width: 116px;
+        height: 34px;
+    }
+
+    .collapse {
+        background-color: var(--grey-500) !important;
+        margin-top: 24px !important;
+    }
+
+    @media screen and (min-width: 992px) {
+        .collapse {
+            background-color: transparent !important;
+            margin-top: 0px !important;
+            width: 0px !important;
+        }
+        
+    }
+}
+
+@layer hero {
+    main.mt-5 {
+        margin-top: 120px !important;
+        padding: 64px 0px !important;
+    }
+
+    @media (max-width: 768px) {
+        main.mt-5 {
+            padding: 16px 0px !important;
+        }
+    }
+
+    h1 {
+        color: var(--text-header);
+    }
+
+    .body-text {
+        color: var(--text-body);
+    }
+
+    .hero #hero-details #hero-left #hero-search {
+        background-color: var(--accent-50);
+        border-radius: 999px;
+        border: 1px solid var(--accent-500);
+        height: 80px;
+        padding: 8px 16px 8px 32px !important;
+    }
+
+    .hero #hero-details #hero-left #hero-search input {
+        border: none;
+        font: inherit;
+        color: var(--text-caption);
+        background-color: transparent;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+
+    .hero #hero-details #hero-left #hero-search input::placeholder {
+        color: var(--text-caption);
+    }
+
+    .hero #hero-details #hero-left #hero-search input:focus {
+        outline: none;
+        color: var(--text-body);
+    }
+    
+    .hero #hero-details #hero-left #hero-search #search-icon {
+        width: 48px;
+        height: 48px;
+        padding: 12px !important;
+        border-radius: 999px;
+        background-color: var(--btn-primary);
+        color: var(--btn-primary-text);
+    }
+
+    .hero #hero-details #hero-left #hero-search:hover {
+        border: 8px solid var(--accent-500);
+        font: inherit;
+        color: var(--text-caption);
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .hero #hero-details #hero-left #hero-search:focus {
+        border: 8px solid var(--accent-500);
+        font: inherit;
+        color: var(--text-body);
+        background-color: transparent;
+        width: 100%;
+    }
+}
+
+@layer trusted-by {
+    .trusted-by {
+        margin-top: 48px !important;
+        padding: 64px 0px !important;
+        background-color: var(--bg-dark);
+    }
+
+    @media (max-width: 768px) {
+        .trusted-by {
+            padding: 16px 0px !important;
+        }
+    }
+
+    .trusted-by #trusted-by-details .body-text {
+        color: var(--grey-600);
+    }
+
+    .trusted-by #trusted-by-details #trusted-by-list ul {
+        list-style: none;
+    }
+
+    .trusted-by #trusted-by-details #trusted-by-list ul li .list-icon {
+        border: 1px solid var(--grey-300);
+    }
+
+    .trusted-by #trusted-by-details #trusted-by-list ul li .list-icon svg {
+        color: var(--btn-primary);
+    }
+
+    .trusted-by #trusted-by-details #trusted-by-list ul .trust-list h4 {
+        color: var(--grey-500);
+    }
+}

@@ -5,35 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sistiniepik</title>
 
-    <link rel="stylesheet" href="/frontend/css/styles.css">
-    <link rel="stylesheet" href="/frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/frontend/css/bootstrap.min.css"> <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="/frontend/css/styles.css"> <!--Native CSS-->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!--Header-->
+    <header class="px-2 px-sm-3 px-lg-5 py-2 py-lg-4 z-3 position-fixed top-0 start-0 w-100">
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="logo inline-block" id="logo">
+                    <img src="/frontend/images/sistinepik_logo.png" alt="the company logo">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse p-5 p-lg-0 " id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-5 mb-lg-0" id="navbarLinks">
+                        <li class="nav-item">
+                            <a class="nav-default active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-default" href="/frontend/asset.html">Assets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-default" href="/frontend/creator.html">Creators</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-default" href="/frontend/pricing.html">Pricing</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav d-flex gap-3" id="navbarBtn">
+                        <li class="nav-item">
+                            <a href="#" class="btn-secondary">Create Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn-primary">Log In</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+    <main class="mt-5 px-2 px-sm-3 px-lg-5">
+        <!--Hero-->
+        <section class="hero w-100">
+            <div id="hero-details" class="container d-flex flex-column gap-sm-2 flex-lg-row ">
+                <div id="hero-left" class="d-flex flex-column justify-content-md-between py-5 col-lg-8">
+                    <div id="hero-text" class="text col-lg-8">
+                        <h1 class="mb-3">
+                            Your Legit Creativity Hub
+                        </h1>
+                        <p class="body-text">
+                            Discover and download thousands of Nigerian-inspired images, illustrations, 3D and other forms of assets crafted by creators like you.
+                        </p>
+                    </div>
+                    <div id="hero-search" class="d-flex align-items-center mt-4 col-lg-8">
+                        <input type="text" name="seachbar" id="searchbar" placeholder="Search for your preferred assets...">
+                        <div id="search-icon" class="d-flex align-items-center justify-content-between">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="img-container" class="col-12 col-lg-4 mt-5">
+                    <img src="/frontend/images/hero-img-animate.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--Trusted by-->
+        <section class="trusted-by w-100">
+            <div id="trusted-by-details" class="container w-100 d-flex gap-2 flex-column justify-content-center">
+                <p class="body-text">
+                    Trusted by
+                </p>
+
+                <div id="trusted-by-list" class="w-100">
+                    <ul class="d-flex row flex-wrap gap-2">
+                        <li class="trust-list col d-flex align-items-center justify-content-center gap-1" id="list-1">
+                            <div class="list-icon d-flex align-items-center justify-content-center p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                            </div>
+                            <h4>UI/UX Designer</h4>
+                        </li>
+                        <li class="trust-list col d-flex align-items-center justify-content-center gap-1" id="list-2">
+                            <div class="list-icon list-icon d-flex align-items-center justify-content-center p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                            </div>
+                            <h4>Illustrators</h4>
+                        </li>
+                        <li class="trust-list col d-flex align-items-center justify-content-center gap-1" id="list-3">
+                            <div class="list-icon list-icon d-flex align-items-center justify-content-center p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                            </div>
+                            <h4>3D Creators</h4>
+                        </li>
+                        <li class="trust-list col d-flex align-items-center justify-content-center gap-1" id="list-4">
+                            <div class="list-icon list-icon d-flex align-items-center justify-content-center p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                            </div>
+                            <h4>Motion Designers</h4>
+                        </li>
+                        <li class="trust-list col d-flex align-items-center justify-content-center gap-1" id="list-5">
+                            <div class="list-icon list-icon d-flex align-items-center justify-content-center p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                            </div>
+                            <h4>Graphic Designers</h4>
+                        </li>
+                        <li class="trust-list col d-flex align-items-center justify-content-center gap-1" id="list-6">
+                            <div class="list-icon list-icon d-flex align-items-center justify-content-center p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                            </div>
+                            <h4>Iconographers</h4>
+                        </li>
+                        <li class="trust-list col d-flex align-items-center justify-content-center gap-1" id="list-7">
+                            <div class="list-icon list-icon d-flex align-items-center justify-content-center p-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                            </div>
+                            <h4>Photographers</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="/frontend/js/index.js"></script>
     <script src="/frontend/js/bootstrap.bundle.min.js"></script>
